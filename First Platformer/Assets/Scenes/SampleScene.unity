@@ -4879,6 +4879,7 @@ GameObject:
   - component: {fileID: 616776654}
   - component: {fileID: 616776653}
   - component: {fileID: 616776652}
+  - component: {fileID: 616776655}
   m_Layer: 0
   m_Name: Stone_1 (2)
   m_TagString: Untagged
@@ -4893,7 +4894,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616776651}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4974,6 +4975,22 @@ Transform:
   m_Father: {fileID: 265625377}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &616776655
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616776651}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.056858063}
+  serializedVersion: 2
+  m_Radius: 0.4765892
 --- !u!1 &617893435
 GameObject:
   m_ObjectHideFlags: 0
@@ -8678,6 +8695,7 @@ GameObject:
   - component: {fileID: 1281648926}
   - component: {fileID: 1281648925}
   - component: {fileID: 1281648924}
+  - component: {fileID: 1281648927}
   m_Layer: 0
   m_Name: Stone_1 (1)
   m_TagString: Untagged
@@ -8692,7 +8710,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281648923}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -8773,6 +8791,22 @@ Transform:
   m_Father: {fileID: 265625377}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1281648927
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281648923}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.07089949}
+  serializedVersion: 2
+  m_Radius: 0.46254778
 --- !u!1 &1293544461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9823,6 +9857,7 @@ GameObject:
   - component: {fileID: 1464492992}
   - component: {fileID: 1464492991}
   - component: {fileID: 1464492993}
+  - component: {fileID: 1464492994}
   m_Layer: 0
   m_Name: Saw_3
   m_TagString: Untagged
@@ -9899,7 +9934,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464492990}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -9918,6 +9953,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0204359}
   m_EdgeRadius: 0
+--- !u!58 &1464492994
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464492990}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.51021796
 --- !u!1 &1474690509
 GameObject:
   m_ObjectHideFlags: 0
