@@ -24,7 +24,7 @@ public class CompletePlayerController : MonoBehaviour
 
     public static void killCoin(Resources resource)
     {
-        Destroy(resource.gameObject);
+        //Destroy coin
     }
 
     /**public static void KillPlayer(Player player)
