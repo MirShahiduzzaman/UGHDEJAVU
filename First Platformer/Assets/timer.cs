@@ -5,18 +5,30 @@ using UnityEngine.UI;
 
 public class timer : MonoBehaviour
 {
-    public Text Timer;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Timer = transform.Find("Text").GetComponent<Text>();
-    }
-
-    // Update is called once per frame
+    public Text timerText;
+    private float secondsCount;
+    private int minuteCount;
+    private int hourCount;
     void Update()
     {
-        Timer.text = "0";
-        
+        UpdateTimerUI();
     }
+    //call this on update
+    public void UpdateTimerUI()
+    {
+        //set timer UI
+        secondsCount += Time.deltaTime;
+        timerText.text = "Time" + " " + " " + " " + " "  + (int)secondsCount + "s";
+        if (secondsCount >= 60)
+        {
+            minuteCount++;
+            secondsCount = 0;
+        }
+        else if (minuteCount >= 60)
+        {
+            hourCount++;
+            minuteCount = 0;
+        }
+    }
+
 }
