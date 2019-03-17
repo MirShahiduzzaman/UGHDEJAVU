@@ -9,7 +9,7 @@ public class timer : MonoBehaviour
     private float secondsCount;
     private int minuteCount;
     private int hourCount;
-    void Update()
+    void FixedUpdate()
     {
         UpdateTimerUI();
     }

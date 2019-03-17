@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-
+    private double portalLoc;
     public Transform player;
     public Text scoreText;
 
@@ -14,7 +14,7 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        portalLoc = GameObject.FindGameObjectWithTag("Finish").transform.position.x;
     }
 
     // Update is called once per frame
@@ -30,8 +30,14 @@ public class Score : MonoBehaviour
             return;
         }
 
-        scoreText.text = "Score" + " " + " " + " " + " " + " " + player.position.x.ToString("0");
-        
+        if (player.position.x < portalLoc)
+        {
+            scoreText.text = "Score" + " " + " " + " " + " " + " " + ((int)player.position.x).ToString();
+        }
+        else
+        {
+            scoreText.text = "Score" + " " + " " + " " + " " + " " + ((int)(portalLoc - (player.position.x - portalLoc))).ToString();
+        }
     }
 
     IEnumerator SearchForPlayer()

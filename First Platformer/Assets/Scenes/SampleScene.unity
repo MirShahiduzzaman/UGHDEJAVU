@@ -14862,7 +14862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 334.995, y: 296.3642}
+  m_AnchoredPosition: {x: 334.995, y: 146.3642}
   m_SizeDelta: {x: 266.1, y: 85.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1762172545
@@ -14929,7 +14929,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762172543}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6cbe2e3fd0eebc40866e9416ec1ff78, type: 3}
   m_Name: 
@@ -15289,7 +15289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 337.99506, y: 315.3642}
+  m_AnchoredPosition: {x: 337.99506, y: 165.3642}
   m_SizeDelta: {x: 266.1, y: 85.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1828783482
@@ -15361,6 +15361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac476639ef205fa4b85a64fae4614cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  portal: {fileID: 1876110895}
   player: {fileID: 875832096}
   scoreText: {fileID: 1828783482}
 --- !u!1 &1836168404
