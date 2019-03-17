@@ -5,21 +5,18 @@ using UnityEngine.UI;
 
 public class timer : MonoBehaviour
 {
-    public int Timer;
+    public Text Timer;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Timer = transform.FindChild("Text").GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
+       Timer.text = string.Format("Time left: {0}", )
         
-        if(Timer > 0 )
-        {
-            Timer++;
-        }
     }
 }
