@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class timer : MonoBehaviour
 {
-    public Text Timer;
+    public int Timer;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +16,10 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Timer.text = "";
+        
+        if(Timer > 0 )
+        {
+            Timer++;
+        }
     }
 }
