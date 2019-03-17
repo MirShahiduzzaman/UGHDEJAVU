@@ -10,13 +10,13 @@ public class timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Timer = transform.FindChild("Text").GetComponent<Text>();
+        Timer = transform.Find("Text").GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-       Timer.text = string.Format("Time left: {0}", )
+        Timer.text = "0";
         
     }
 }
