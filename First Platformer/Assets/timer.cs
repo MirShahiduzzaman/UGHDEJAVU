@@ -11,14 +11,8 @@ public class timer : MonoBehaviour
     private int hourCount;
     void FixedUpdate()
     {
-        UpdateTimerUI();
-    }
-    //call this on update
-    public void UpdateTimerUI()
-    {
-        //set timer UI
         secondsCount += Time.deltaTime;
-        timerText.text = "Time" + " " + " " + " " + " "  + (int)secondsCount + "s";
+        timerText.text = "Time" + " " + " " + " " + " " + (int)secondsCount + "s";
         if (secondsCount >= 60)
         {
             minuteCount++;
@@ -29,6 +23,13 @@ public class timer : MonoBehaviour
             hourCount++;
             minuteCount = 0;
         }
+       // UpdateTimerUI();
+    }
+    //call this on update
+    public void UpdateTimerUI()
+    {
+        //set timer UI
+        
     }
 
 }
