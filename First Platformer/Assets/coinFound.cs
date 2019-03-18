@@ -11,20 +11,12 @@ public GameObject currentInterObj = null;
        
         if (other.CompareTag("coin")) {
 
-            Debug.Log("hui");
             currentInterObj = other.gameObject;
+            Destroy(other.gameObject);
 
         }
       
     }
-    void onTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("coin"))
-        {
-            if(other.gameObject == currentInterObj)
-            {
-                currentInterObj = null;
-            }
-        }
-    }
+
+    
 }
