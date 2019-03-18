@@ -38,6 +38,7 @@ public class Score : MonoBehaviour
         {
             scoreText.text = "Score" + " " + " " + " " + " " + " " + ((int)(portalLoc - (player.position.x - portalLoc))).ToString();
         }
+        
     }
 
     IEnumerator SearchForPlayer()
