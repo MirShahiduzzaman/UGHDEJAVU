@@ -5,7 +5,7 @@ using UnityEngine;
 public class coinFound : MonoBehaviour { 
 public GameObject currentInterObj = null;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
 
     {
        
