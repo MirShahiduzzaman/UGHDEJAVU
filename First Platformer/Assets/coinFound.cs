@@ -6,9 +6,12 @@ public class coinFound : MonoBehaviour {
 public GameObject currentInterObj = null;
 
     private void OnTriggerEnter2D(Collider2D other)
+
     {
+       
         if (other.CompareTag("coin")) {
-            Debug.Log(other.name);
+
+            Debug.Log("hui");
             currentInterObj = other.gameObject;
 
         }
