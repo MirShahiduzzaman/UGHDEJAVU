@@ -6,6 +6,7 @@ public class SimpleMovement : MonoBehaviour
 {
     public float speed = 300f;
     public float distance;
+    private float relDistance = 0f;
 
     private bool movingRight = true;
     public bool vertical = false;
@@ -30,9 +31,9 @@ public class SimpleMovement : MonoBehaviour
             transform.Translate(Vector2.down * speed * Time.deltaTime);
         }
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
-
-        if(groundInfo.collider == false)
+        relDistance++;
+            
+        if((relDistance >= distance && movingRight) || (relDistance >= (2 * distance) && !movingRight))
         {
             if(movingRight == true)
             {
@@ -44,6 +45,7 @@ public class SimpleMovement : MonoBehaviour
                 transform.eulerAngles = new Vector3(0,0,0);
                 movingRight = true;
             }
+            relDistance = 0f;
         }
     }
 }
