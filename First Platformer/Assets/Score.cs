@@ -8,6 +8,7 @@ public class Score : MonoBehaviour
     private double portalLoc;
     public Transform player;
     public Text scoreText;
+    private static int addScore = 0;
 
     private bool searchingForPlayer = false;
 
@@ -32,11 +33,11 @@ public class Score : MonoBehaviour
 
         if (player.position.x < portalLoc)
         {
-            scoreText.text = "Score" + " " + " " + " " + " " + " " + ((int)player.position.x).ToString();
+            scoreText.text = "Score" + " " + " " + " " + " " + " " + ((int)(player.position.x + addScore)).ToString();
         }
         else
         {
-            scoreText.text = "Score" + " " + " " + " " + " " + " " + ((int)(portalLoc - (player.position.x - portalLoc))).ToString();
+            scoreText.text = "Score" + " " + " " + " " + " " + " " + ((int)(portalLoc - (player.position.x - portalLoc) + addScore)).ToString();
         }
         
     }
@@ -57,5 +58,10 @@ public class Score : MonoBehaviour
 
             yield return false;
         }
+    }
+
+    public static void addToScore()
+    {
+        addScore += 1000;
     }
 }
