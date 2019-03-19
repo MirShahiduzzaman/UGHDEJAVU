@@ -2533,6 +2533,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentInterObj: {fileID: 0}
+  player: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!1 &288087952
 GameObject:
   m_ObjectHideFlags: 0
@@ -3423,6 +3425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentInterObj: {fileID: 0}
+  player: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!212 &384299039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5338,7 +5342,6 @@ MonoBehaviour:
   speed: 300
   distance: 0
   vertical: 0
-  groundDetection: {fileID: 0}
 --- !u!1 &575039111
 GameObject:
   m_ObjectHideFlags: 0
@@ -7774,6 +7777,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentInterObj: {fileID: 0}
+  player: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!58 &800781681
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8251,6 +8256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentInterObj: {fileID: 0}
+  player: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!212 &823070123
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8817,6 +8824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 884746870}
   - component: {fileID: 884746869}
+  - component: {fileID: 884746871}
   m_Layer: 8
   m_Name: HeroTest (3)
   m_TagString: Untagged
@@ -8886,6 +8894,21 @@ Transform:
   m_Father: {fileID: 1123004758}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &884746871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884746868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b100d607016c762429929dfa6f29a55c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  distance: 100
+  vertical: 1
 --- !u!1 &887347026
 GameObject:
   m_ObjectHideFlags: 0
@@ -12519,6 +12542,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentInterObj: {fileID: 0}
+  player: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!212 &1437794583
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15861,6 +15886,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentInterObj: {fileID: 0}
+  player: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!212 &1786514071
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15971,6 +15998,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentInterObj: {fileID: 0}
+  player: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!212 &1790796580
 SpriteRenderer:
   m_ObjectHideFlags: 0
