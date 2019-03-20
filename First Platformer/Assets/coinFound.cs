@@ -4,9 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class coinFound : MonoBehaviour { 
-public GameObject currentInterObj = null;
-    public Transform player;
-    public Text scoreText;
+    private GameObject currentInterObj = null;
 
     private bool searchingForPlayer = false;
 
@@ -26,7 +24,7 @@ public GameObject currentInterObj = null;
         }
         else
         {
-            if (other.CompareTag("enemy"))
+            if (other.CompareTag("Enemy"))
             {
                 Debug.Log("Kill Player");
             }
