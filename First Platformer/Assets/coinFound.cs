@@ -30,14 +30,7 @@ public class coinFound : MonoBehaviour
             {
                 Debug.Log("Kill Player");
             }
-            else
-            {
-                if (other.CompareTag("end"))
-                {
-                    Destroy(this);
-                }
-            }
-
+           
         }
     }
 
