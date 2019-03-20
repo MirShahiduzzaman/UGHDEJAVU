@@ -24,7 +24,7 @@ public class timer : MonoBehaviour
             minuteCount = 0;
         }
        // UpdateTimerUI();
-    }
+    } 
     //call this on update
     public void UpdateTimerUI()
     {
