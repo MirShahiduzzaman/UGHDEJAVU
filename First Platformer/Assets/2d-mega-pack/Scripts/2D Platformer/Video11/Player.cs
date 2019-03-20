@@ -23,5 +23,5 @@ public class Player : MonoBehaviour {
 			GameMaster.KillPlayer(this);
 		}
 	}
-
+   
 }
