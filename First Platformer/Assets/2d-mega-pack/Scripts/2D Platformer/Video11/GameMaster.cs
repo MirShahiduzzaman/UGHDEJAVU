@@ -24,12 +24,14 @@ public class GameMaster : MonoBehaviour {
 
         Instantiate (playerPrefab, spawnPoint.position, spawnPoint.rotation);
         Debug.Log("TODO: ADD SPAWN PARTICLES");
+
+        Score.setScore(0);
+        timer.resetTimer();
     }
 
-    public static void KillPlayer (Player player) {
-        Score.setScore(0);
-		Destroy (player.gameObject);
+    public static void KillPlayer(Player player) {
+        Destroy(player.gameObject);
         gm.StartCoroutine(gm.RespawnPlayer());
-	}
+    }
 
 }

@@ -47,7 +47,6 @@ GameObject:
   - component: {fileID: 6100000}
   - component: {fileID: 430401613}
   - component: {fileID: 1452009221915966480}
-  - component: {fileID: 285671205}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -249,21 +248,6 @@ MonoBehaviour:
   playerStats:
     Health: 100
   fallBoundary: -20
---- !u!114 &285671205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b052b3d6776192645881264b50e3d61f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentInterObj: {fileID: 0}
-  player: {fileID: 0}
-  scoreText: {fileID: 0}
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0

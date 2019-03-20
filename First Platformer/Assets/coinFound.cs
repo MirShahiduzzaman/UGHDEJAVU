@@ -26,7 +26,7 @@ public class coinFound : MonoBehaviour {
         {
             if (other.CompareTag("Enemy"))
             {
-                Debug.Log("Kill Player");
+                Debug.Log("");
             }
         }
       

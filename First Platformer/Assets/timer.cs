@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class timer : MonoBehaviour
 {
     public Text timerText;
-    private float secondsCount;
-    private int minuteCount;
-    private int hourCount;
+    private static float secondsCount;
+    private static int minuteCount;
+    private static int hourCount;
     void FixedUpdate()
     {
         secondsCount += Time.deltaTime;
@@ -31,7 +31,7 @@ public class timer : MonoBehaviour
         //set timer UI
     }
 
-    public void resetTimer()
+    public static void resetTimer()
     {
         secondsCount = 0;
         minuteCount = 0;

@@ -24,4 +24,22 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("coin"))
+        {
+            Destroy(other.gameObject);
+            Score.addToScore();
+        }
+        else
+        {
+            if (other.CompareTag("Enemy"))
+            {
+                DamagePlayer(9999999);
+                Debug.Log("OUCH!!");
+            }
+        }
+
+    }
+
 }
