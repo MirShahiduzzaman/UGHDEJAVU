@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class coinFound : MonoBehaviour { 
+public class coinFound : MonoBehaviour
+{
     private GameObject currentInterObj = null;
 
     private bool searchingForPlayer = false;
@@ -11,12 +12,13 @@ public class coinFound : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("coin")) {
+        if (other.CompareTag("coin"))
+        {
 
             currentInterObj = other.gameObject;
             Destroy(other.gameObject);
@@ -28,9 +30,9 @@ public class coinFound : MonoBehaviour {
             {
                 Debug.Log("");
             }
+           
         }
-      
     }
 
-    
+
 }
