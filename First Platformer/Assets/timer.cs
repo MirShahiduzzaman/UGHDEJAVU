@@ -29,7 +29,13 @@ public class timer : MonoBehaviour
     public void UpdateTimerUI()
     {
         //set timer UI
-        
+    }
+
+    public void resetTimer()
+    {
+        secondsCount = 0;
+        minuteCount = 0;
+        hourCount = 0;
     }
 
 }

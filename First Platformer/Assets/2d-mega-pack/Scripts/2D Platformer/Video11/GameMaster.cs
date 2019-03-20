@@ -27,6 +27,7 @@ public class GameMaster : MonoBehaviour {
     }
 
     public static void KillPlayer (Player player) {
+        Score.setScore(0);
 		Destroy (player.gameObject);
         gm.StartCoroutine(gm.RespawnPlayer());
 	}

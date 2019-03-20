@@ -64,4 +64,9 @@ public class Score : MonoBehaviour
     {
         addScore += 1000;
     }
+
+    public static void setScore(int score)
+    {
+        addScore = score;
+    }
 }
