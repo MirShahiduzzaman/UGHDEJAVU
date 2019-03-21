@@ -5,6 +5,8 @@ public class GameMaster : MonoBehaviour {
 
     public static GameMaster gm;
 
+    
+
     void Start()
     {
         if(gm == null)
