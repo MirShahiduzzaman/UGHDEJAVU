@@ -38,6 +38,13 @@ public class Player : MonoBehaviour {
                 DamagePlayer(9999999);
                 Debug.Log("OUCH!!");
             }
+            else
+            {
+                if (other.CompareTag("Finish"))
+                {
+                    
+                }
+            }
         }
 
     }
