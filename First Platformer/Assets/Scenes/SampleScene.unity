@@ -5470,6 +5470,7 @@ GameObject:
   - component: {fileID: 432769529}
   - component: {fileID: 432769528}
   - component: {fileID: 432769527}
+  - component: {fileID: 432769530}
   m_Layer: 8
   m_Name: HeroTest (8)
   m_TagString: Enemy
@@ -5606,6 +5607,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &432769530
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432769524}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 170.4, y: 391.8}
+    newSize: {x: 3.833521, y: 8.827896}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 170.4, y: 391.8}
+  m_EdgeRadius: 0
 --- !u!1 &436707421
 GameObject:
   m_ObjectHideFlags: 0
@@ -7753,6 +7780,7 @@ GameObject:
   - component: {fileID: 567177409}
   - component: {fileID: 567177408}
   - component: {fileID: 567177410}
+  - component: {fileID: 567177411}
   m_Layer: 8
   m_Name: HeroTest (7)
   m_TagString: Enemy
@@ -7837,6 +7865,32 @@ MonoBehaviour:
   speed: 300
   distance: 0
   vertical: 0
+--- !u!61 &567177411
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567177407}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 170.4, y: 391.8}
+    newSize: {x: 3.833521, y: 8.827896}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 170.4, y: 391.8}
+  m_EdgeRadius: 0
 --- !u!1 &575039111
 GameObject:
   m_ObjectHideFlags: 0
@@ -8131,6 +8185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 581697520}
   - component: {fileID: 581697519}
+  - component: {fileID: 581697521}
   m_Layer: 8
   m_Name: HeroTest (2)
   m_TagString: Enemy
@@ -8200,6 +8255,32 @@ Transform:
   m_Father: {fileID: 1123004758}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &581697521
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581697518}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 170.4, y: 391.8}
+    newSize: {x: 3.833521, y: 8.827896}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 170.4, y: 391.8}
+  m_EdgeRadius: 0
 --- !u!1 &582755560
 GameObject:
   m_ObjectHideFlags: 0
@@ -8588,6 +8669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 600418723}
   - component: {fileID: 600418722}
+  - component: {fileID: 600418724}
   m_Layer: 8
   m_Name: HeroTest (4)
   m_TagString: Enemy
@@ -8657,6 +8739,32 @@ Transform:
   m_Father: {fileID: 1123004758}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &600418724
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600418721}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 170.4, y: 391.8}
+    newSize: {x: 3.833521, y: 8.827896}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 170.4, y: 391.8}
+  m_EdgeRadius: 0
 --- !u!1 &606576175
 GameObject:
   m_ObjectHideFlags: 0
@@ -9460,6 +9568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 634478798}
   - component: {fileID: 634478797}
+  - component: {fileID: 634478799}
   m_Layer: 8
   m_Name: HeroTest (1)
   m_TagString: Enemy
@@ -9529,6 +9638,32 @@ Transform:
   m_Father: {fileID: 1123004758}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &634478799
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634478796}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 170.4, y: 391.8}
+    newSize: {x: 3.833521, y: 8.827896}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 170.4, y: 391.8}
+  m_EdgeRadius: 0
 --- !u!1 &642808528
 GameObject:
   m_ObjectHideFlags: 0
@@ -12923,6 +13058,7 @@ GameObject:
   - component: {fileID: 884746870}
   - component: {fileID: 884746869}
   - component: {fileID: 884746871}
+  - component: {fileID: 884746872}
   m_Layer: 8
   m_Name: HeroTest (3)
   m_TagString: Enemy
@@ -13007,6 +13143,32 @@ MonoBehaviour:
   speed: 10
   distance: 100
   vertical: 1
+--- !u!61 &884746872
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884746868}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 170.4, y: 391.8}
+    newSize: {x: 3.833521, y: 8.827896}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 170.4, y: 391.8}
+  m_EdgeRadius: 0
 --- !u!1 &887347026
 GameObject:
   m_ObjectHideFlags: 0
@@ -21727,6 +21889,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1558349232}
   - component: {fileID: 1558349231}
+  - component: {fileID: 1558349233}
   m_Layer: 8
   m_Name: HeroTest
   m_TagString: Enemy
@@ -21796,6 +21959,32 @@ Transform:
   m_Father: {fileID: 1123004758}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1558349233
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558349230}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 170.4, y: 391.8}
+    newSize: {x: 3.833521, y: 8.827896}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 170.4, y: 391.8}
+  m_EdgeRadius: 0
 --- !u!1 &1562078260
 GameObject:
   m_ObjectHideFlags: 0
@@ -22284,6 +22473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1592255102}
   - component: {fileID: 1592255101}
+  - component: {fileID: 1592255103}
   m_Layer: 8
   m_Name: HeroTest (5)
   m_TagString: Enemy
@@ -22353,6 +22543,32 @@ Transform:
   m_Father: {fileID: 1123004758}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1592255103
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592255100}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 170.4, y: 391.8}
+    newSize: {x: 3.833521, y: 8.827896}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 170.4, y: 391.8}
+  m_EdgeRadius: 0
 --- !u!1 &1592553094
 GameObject:
   m_ObjectHideFlags: 0
@@ -23218,6 +23434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1637368387}
   - component: {fileID: 1637368386}
+  - component: {fileID: 1637368388}
   m_Layer: 8
   m_Name: HeroTest (6)
   m_TagString: Enemy
@@ -23287,6 +23504,32 @@ Transform:
   m_Father: {fileID: 1123004758}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1637368388
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637368385}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 170.4, y: 391.8}
+    newSize: {x: 3.833521, y: 8.827896}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 170.4, y: 391.8}
+  m_EdgeRadius: 0
 --- !u!1 &1650447213
 GameObject:
   m_ObjectHideFlags: 0
