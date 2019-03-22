@@ -17,7 +17,7 @@ public class GameMaster : MonoBehaviour {
 
     public Transform playerPrefab;
     public Transform spawnPoint;
-    public int spawnDelay = 2;
+    public int spawnDelay = 1;
 
     public IEnumerator RespawnPlayer ()
     {
