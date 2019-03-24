@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -11,6 +12,12 @@ public class Player : MonoBehaviour {
 	public PlayerStats playerStats = new PlayerStats();
 
 	public int fallBoundary = -20;
+    private Scene scene;
+
+    void Start()
+    {
+        scene = SceneManager.GetActiveScene();
+    }
 
 	void Update () {
 		if (transform.position.y <= fallBoundary)
@@ -35,14 +42,15 @@ public class Player : MonoBehaviour {
         {
             if (other.CompareTag("Enemy"))
             {
-                DamagePlayer(9999999);
+                //DamagePlayer(9999999);
                 Debug.Log("OUCH!!");
+                Application.LoadLevel(scene.name);
             }
             else
             {
                 if (other.CompareTag("Finish"))
                 {
-                    
+                    Debug.Log("WE'RE DONE!!!");
                 }
             }
         }
