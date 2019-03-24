@@ -4,6 +4,11 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
+    public static bool GameIsPaused = false;
+
+    public GameObject pauseMenuUI;
+
+
     private Toggle m_MenuToggle;
 	private float m_TimeScaleRef = 1f;
     private float m_VolumeRef = 1f;
@@ -36,28 +41,44 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-    public void OnMenuStatusChange ()
-    {
-        if (m_MenuToggle.isOn && !m_Paused)
-        {
-            MenuOn();
-        }
-        else if (!m_MenuToggle.isOn && m_Paused)
-        {
-            MenuOff();
-        }
-    }
+    //public void OnMenuStatusChange ()
+    //{
+    //    if (m_MenuToggle.isOn && !m_Paused)
+    //    {
+    //        MenuOn();
+    //    }
+    //    else if (!m_MenuToggle.isOn && m_Paused)
+    //    {
+    //        MenuOff();
+    //    }
+    //}
 
-
-#if !MOBILE_INPUT
-	void Update()
+    void Update()
 	{
-		if(Input.GetKeyUp(KeyCode.Escape))
+		if(Input.GetKeyDown(KeyCode.Escape))
 		{
-		    m_MenuToggle.isOn = !m_MenuToggle.isOn;
-            Cursor.visible = m_MenuToggle.isOn;//force the cursor visible if anythign had hidden it
+		    if(GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
 		}
 	}
-#endif
 
+    void Resume()
+    {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
+
+    void Pause()
+    {
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
+    }
 }
