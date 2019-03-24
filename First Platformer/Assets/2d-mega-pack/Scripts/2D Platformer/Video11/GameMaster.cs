@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour {
 
     public static GameMaster gm;
-
-    
+    private Scene scene;
 
     void Start()
     {
-        if(gm == null)
+        scene = SceneManager.GetActiveScene();
+
+        if (gm == null)
         {
             gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         }
@@ -24,9 +26,7 @@ public class GameMaster : MonoBehaviour {
         Debug.Log("TODO: Waiting fir spawn sound");
         yield return new WaitForSeconds(spawnDelay);
 
-        Instantiate (playerPrefab, spawnPoint.position, spawnPoint.rotation);
-        Debug.Log("TODO: ADD SPAWN PARTICLES");
-
+        Application.LoadLevel(scene.name);
         Score.setScore(0);
         timer.resetTimer();
     }

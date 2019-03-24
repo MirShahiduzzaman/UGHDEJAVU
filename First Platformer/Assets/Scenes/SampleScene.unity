@@ -12443,7 +12443,7 @@ PrefabInstance:
     - target: {fileID: 1452009221915966480, guid: 87a2357765801c34292d6718d8b4d770,
         type: 3}
       propertyPath: fallBoundary
-      value: -100
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 350368301, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_Enabled
