@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
@@ -7,7 +8,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
-
+    Scene scene;
 
     private Toggle m_MenuToggle;
 	private float m_TimeScaleRef = 1f;
@@ -20,6 +21,10 @@ public class PauseMenu : MonoBehaviour
         m_MenuToggle = GetComponent <Toggle> ();
 	}
 
+    public void Start()
+    {
+        scene = SceneManager.GetActiveScene();
+    }
 
     private void MenuOn ()
     {
@@ -68,7 +73,7 @@ public class PauseMenu : MonoBehaviour
 		}
 	}
 
-    void Resume()
+    public void Resume()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
@@ -80,5 +85,19 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        Application.LoadLevel(scene.name);
+        Score.setScore(0);
+        timer.resetTimer();
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quitting Game..");
+        Application.Quit();
     }
 }
