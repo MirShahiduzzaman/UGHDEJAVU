@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
-    Scene scene;
+    private Scene scene;
 
     private Toggle m_MenuToggle;
 	private float m_TimeScaleRef = 1f;
