@@ -60,7 +60,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.Escape))
+		if(Input.GetKeyDown(KeyCode.Escape) && !Player.getDone())
 		{
 		    if(GameIsPaused)
             {
@@ -80,7 +80,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
-    void Pause()
+    public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;

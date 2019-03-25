@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
 	public PlayerStats playerStats = new PlayerStats();
 
 	public int fallBoundary = -20;
+    private static bool done;
 
 	void Update () {
 		if (transform.position.y <= fallBoundary)
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour {
             {
                 if (other.CompareTag("Finish"))
                 {
+                    done = true;
                     Debug.Log("WE'RE DONE!!!");
                 }
             }
