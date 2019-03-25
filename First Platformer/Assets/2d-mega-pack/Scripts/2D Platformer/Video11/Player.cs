@@ -51,4 +51,9 @@ public class Player : MonoBehaviour {
         }
 
     }
+
+    public static bool getDone()
+    {
+        return (done);
+    }
 }
