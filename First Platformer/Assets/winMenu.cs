@@ -24,7 +24,7 @@ public class winMenu : MonoBehaviour
     {
         if (Player.getDone())
         {
-            winText.text = "Congrats! You won with __ pts in __ sec. Can you do better?";
+            winText.text = "Congrats! You won with " + Score.getScore() + "pts in __ sec. Can you do better?";
             Win();
         }
     }

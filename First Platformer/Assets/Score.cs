@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     private double portalLoc;
+    private static int addScore = 0;
+    private static int score;
+
     public Transform player;
     public Text scoreText;
-    private static int addScore = 0;
 
     private bool searchingForPlayer = false;
 
@@ -33,11 +35,15 @@ public class Score : MonoBehaviour
 
         if (player.position.x < portalLoc)
         {
-            scoreText.text = "Score" + " " + " " + " " + " " + " " + ((int)(player.position.x + addScore)).ToString();
+            score = (int)(player.position.x + addScore);
+
+            scoreText.text = "Score" + " " + " " + " " + " " + " " + score.ToString();
         }
         else
         {
-            scoreText.text = "Score" + " " + " " + " " + " " + " " + ((int)(portalLoc - (player.position.x - portalLoc) + addScore)).ToString();
+            score = (int)(portalLoc - (player.position.x - portalLoc) + addScore);
+
+            scoreText.text = "Score" + " " + " " + " " + " " + " " + score.ToString();
         }
         
     }
@@ -68,5 +74,10 @@ public class Score : MonoBehaviour
     public static void setScore(int score)
     {
         addScore = score;
+    }
+
+    public static int getScore()
+    {
+        return (score);
     }
 }
