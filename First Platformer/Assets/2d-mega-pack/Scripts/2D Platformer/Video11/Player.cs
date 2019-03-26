@@ -12,7 +12,7 @@ public class Player : MonoBehaviour {
 	public PlayerStats playerStats = new PlayerStats();
 
 	public int fallBoundary = -20;
-    private static bool done;
+    private static bool done = false;
 
 	void Update () {
 		if (transform.position.y <= fallBoundary)

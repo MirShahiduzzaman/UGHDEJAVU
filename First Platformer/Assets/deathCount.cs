@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class deathCount : MonoBehaviour
 {
-    public Text DeathCount;
-    // Update is called once per frame
-    void Update()
+    public static int DeathCount;
+    public static Text DeathText;
+    
+    public static void UpdateDeathCount()
     {
-        DeathCount.text = "DeathCount" + " " + " " + " " + " ";
 
     }
 }
