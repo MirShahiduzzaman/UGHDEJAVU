@@ -24,4 +24,9 @@ public class timer : MonoBehaviour
         secondsCount = 0;
     }
 
+    public static int getSec()
+    {
+        return((int)secondsCount);
+    }
+
 }

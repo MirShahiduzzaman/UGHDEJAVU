@@ -52,8 +52,13 @@ public class Player : MonoBehaviour {
 
     }
 
-    public static bool getDone()
+    public static bool GetDone()
     {
         return (done);
+    }
+
+    public static void SetDone(bool val)
+    {
+        done = val;
     }
 }

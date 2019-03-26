@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -22,9 +20,9 @@ public class winMenu : MonoBehaviour
 
     void Update()
     {
-        if (Player.getDone())
+        if (Player.GetDone())
         {
-            winText.text = "Congrats! You won with " + Score.getScore() + "pts in __ sec. Can you do better?";
+            winText.text = "Congrats! You won with " + Score.getScore() + " pts in " + timer.getSec() + " sec. Can you do better?";
             Win();
         }
     }
@@ -38,6 +36,9 @@ public class winMenu : MonoBehaviour
 
     public void RestartGame()
     {
+        Player.SetDone(false);
+        winMenuUI.SetActive(false);
+
         Time.timeScale = 1f;
         Application.LoadLevel(scene.name);
         Score.setScore(0);
@@ -46,7 +47,6 @@ public class winMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Quitting Game..");
-        Application.Quit();
+        PauseMenu.QuitGame();
     }
 }

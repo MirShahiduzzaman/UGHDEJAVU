@@ -60,7 +60,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.Escape) && !Player.getDone())
+		if(Input.GetKeyDown(KeyCode.Escape) && !Player.GetDone())
 		{
 		    if(GameIsPaused)
             {
@@ -95,7 +95,7 @@ public class PauseMenu : MonoBehaviour
         timer.resetTimer();
     }
 
-    public void QuitGame()
+    public static void QuitGame()
     {
         Debug.Log("Quitting Game..");
         Application.Quit();
