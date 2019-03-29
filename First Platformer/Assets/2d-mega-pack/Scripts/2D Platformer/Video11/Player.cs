@@ -14,7 +14,7 @@ public class Player : MonoBehaviour {
 	public int fallBoundary = -20;
     private static bool done = false;
 
-	void Update () {
+    void Update () {
 		if (transform.position.y <= fallBoundary)
 			DamagePlayer (9999999);
 	}

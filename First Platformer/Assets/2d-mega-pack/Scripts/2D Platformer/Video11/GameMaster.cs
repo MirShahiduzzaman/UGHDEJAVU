@@ -6,6 +6,7 @@ public class GameMaster : MonoBehaviour {
 
     public static GameMaster gm;
     private Scene scene;
+    public Animator transitionAnim;
 
     void Start()
     {
@@ -25,8 +26,10 @@ public class GameMaster : MonoBehaviour {
     {
         Debug.Log("TODO: Waiting fir spawn sound");
         yield return new WaitForSeconds(spawnDelay);
-
+        Time.timeScale = 0f;
         Application.LoadLevel(scene.name);
+        Time.timeScale = 1f;
+
         Score.setScore(0);
         timer.resetTimer();
     }
@@ -35,5 +38,4 @@ public class GameMaster : MonoBehaviour {
         Destroy(player.gameObject);
         gm.StartCoroutine(gm.RespawnPlayer());
     }
-
 }
