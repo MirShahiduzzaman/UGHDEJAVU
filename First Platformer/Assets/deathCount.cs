@@ -10,6 +10,7 @@ public class deathCount : MonoBehaviour
     
     public static void UpdateDeathCount()
     {
+        DeathText.text = DeathCount++.ToString();
 
     }
 }
