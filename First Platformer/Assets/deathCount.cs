@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class deathCount : MonoBehaviour
 {
-    public static int DeathCount;
-    public static Text DeathText;
+    public static int deaths = 0;
+    public static Text deathText;
     
     public static void UpdateDeathCount()
     {
-        DeathText.text = DeathCount++.ToString();
-
+        deaths++;
+        deathText.text = "Death Count" + " " + " " + " " + " " + " " + deaths.ToString();
     }
 }

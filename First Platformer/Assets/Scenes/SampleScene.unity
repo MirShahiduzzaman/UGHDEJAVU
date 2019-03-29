@@ -20067,7 +20067,7 @@ GameObject:
   - component: {fileID: 1475467029}
   - component: {fileID: 1475467030}
   m_Layer: 5
-  m_Name: CountCounter
+  m_Name: DeathCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
