@@ -27,10 +27,10 @@ public class GameMaster : MonoBehaviour {
         Debug.Log("TODO: Waiting fir spawn sound");
         yield return new WaitForSeconds(spawnDelay);
         Time.timeScale = 0f;
-        deathCount.UpdateDeathCount();
         Application.LoadLevel(scene.name);
         Time.timeScale = 1f;
 
+        //deathCount.UpdateDeathCount();
         Score.setScore(0);
         timer.resetTimer();
     }

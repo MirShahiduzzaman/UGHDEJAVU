@@ -78,6 +78,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        Debug.Log("Resumed");
     }
 
     public void Pause()
@@ -85,14 +86,17 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        Debug.Log("Paused");
     }
 
     public void RestartGame()
     {
+        Debug.Log("Restarting..");
         Time.timeScale = 1f;
         Application.LoadLevel(scene.name);
         Score.setScore(0);
         timer.resetTimer();
+        GameIsPaused = false;
     }
 
     public static void QuitGame()
