@@ -11,13 +11,7 @@ public class timer : MonoBehaviour
     {
         secondsCount += Time.deltaTime;
         timerText.text = "Time" + " " + " " + " " + " " + (int)secondsCount + "s";
-       // UpdateTimerUI();
     } 
-    //call this on update
-    public void UpdateTimerUI()
-    {
-        //set timer UI
-    }
 
     public static void resetTimer()
     {

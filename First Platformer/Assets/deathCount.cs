@@ -8,6 +8,7 @@ public class deathCount : MonoBehaviour
     
     public static void UpdateDeathCount()
     {
+        Debug.Log("Died ");
         deaths++;
         deathText.text = "Death Count" + " " + " " + " " + " " + " " + deaths.ToString();
     }
