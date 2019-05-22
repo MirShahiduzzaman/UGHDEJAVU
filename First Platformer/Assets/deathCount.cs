@@ -10,6 +10,6 @@ public class deathCount : MonoBehaviour
     {
         Debug.Log("Died ");
         deaths++;
-        deathText.text = "Death Count" + " " + " " + " " + " " + " " + deaths.ToString();
+        deathText.text = "Death Count" + " " + " " + " " + " " + " " + deaths;
     }
 }

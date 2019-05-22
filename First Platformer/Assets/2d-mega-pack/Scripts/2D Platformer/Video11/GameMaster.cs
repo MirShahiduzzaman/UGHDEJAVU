@@ -30,9 +30,10 @@ public class GameMaster : MonoBehaviour {
         Application.LoadLevel(scene.name);
         Time.timeScale = 1f;
 
-        deathCount.UpdateDeathCount();
         Score.setScore(0);
         timer.resetTimer();
+
+        deathCount.UpdateDeathCount();
     }
 
     public static void KillPlayer(Player player) {
