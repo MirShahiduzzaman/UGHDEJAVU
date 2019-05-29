@@ -9,6 +9,7 @@ TagManager:
   - Saw
   - coin
   - Enemy
+  - star
   layers:
   - Default
   - TransparentFX
