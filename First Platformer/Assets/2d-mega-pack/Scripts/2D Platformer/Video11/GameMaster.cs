@@ -25,6 +25,8 @@ public class GameMaster : MonoBehaviour {
     public IEnumerator RespawnPlayer ()
     {
         Debug.Log("TODO: Waiting fir spawn sound");
+
+        deathCount.UpdateDeathCount();
         yield return new WaitForSeconds(spawnDelay);
         Time.timeScale = 0f;
         Application.LoadLevel(scene.name);
@@ -32,8 +34,6 @@ public class GameMaster : MonoBehaviour {
 
         Score.setScore(0);
         timer.resetTimer();
-
-        deathCount.UpdateDeathCount();
     }
 
     public static void KillPlayer(Player player) {
