@@ -36,13 +36,13 @@ public class winMenu : MonoBehaviour
 
     public void RestartGame()
     {
-        Player.SetDone(false);
         winMenuUI.SetActive(false);
-
+        Debug.Log("Restarting..");
         Time.timeScale = 1f;
         Application.LoadLevel(scene.name);
         Score.setScore(0);
         timer.resetTimer();
+        //GameIsPaused = false;
     }
 
     public void QuitGame()
