@@ -9,12 +9,11 @@ public class starTouch : MonoBehaviour
 
     private bool searchingForPlayer = false;
     Camera m;
-    Aud = m.getComponent()
+    //Aud = m.getComponent();
     // Start is called before the first frame update
     void Start()
     {
-       m.Stop();
-     
+       //m.Stop();
     }
 
     public void OnTriggerEnter2D(Collider2D other)
