@@ -14,7 +14,7 @@ public class coinFound : MonoBehaviour
     void Start()
     {
         Bonus = Resources.Load<AudioClip>("Bonas");
-        Bonus = Resources.Load<AudioClip>("Click");
+        Click = Resources.Load<AudioClip>("Click");
         audioSrc = GetComponent<AudioSource>();
     }
     public static void getCoin (string clip)
