@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class winMenu : MonoBehaviour
 {
     public Text winText;
-
+    AudioSource Game, End;
     public GameObject winMenuUI;
     private Scene scene;
 
@@ -16,12 +16,19 @@ public class winMenu : MonoBehaviour
     public void Start()
     {
         scene = SceneManager.GetActiveScene();
+        End = GameObject.Find("Win").GetComponent<AudioSource>();
+        Game = GameObject.Find("Game").GetComponent<AudioSource>();
+
+
     }
 
     void Update()
     {
         if (Player.GetDone())
         {
+           End.volume = .15f;
+            Game.Stop();
+           End.Play();
             winText.text = "Congrats! You won with " + Score.getScore() + " pts in " + timer.getSec() + " sec. Can you do better?";
             Win();
         }

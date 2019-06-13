@@ -70,6 +70,10 @@ public class Score : MonoBehaviour
     {
         addScore += 1000;
     }
+    public static void addToScore(int num)
+    {
+        addScore += num;
+    }
 
     public static void setScore(int score)
     {
