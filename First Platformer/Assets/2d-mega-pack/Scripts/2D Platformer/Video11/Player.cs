@@ -3,8 +3,13 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
-
-	[System.Serializable]
+    AudioSource Game, End;
+    public void Start()
+    {
+        End = GameObject.Find("Win").GetComponent<AudioSource>();
+        Game = GameObject.Find("Game").GetComponent<AudioSource>();
+    }
+    [System.Serializable]
 	public class PlayerStats {
 		public int Health = 100;
 	}
@@ -44,6 +49,9 @@ public class Player : MonoBehaviour {
             {
                 if (other.CompareTag("Finish"))
                 {
+                    End.volume = .5f;
+                    Game.Stop();
+                    End.Play();
                     done = true;
                     Debug.Log("WE'RE DONE!!!");
                 }
